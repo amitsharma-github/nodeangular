@@ -1,7 +1,7 @@
 FROM debian
 RUN apt-get update
-RUN wget -qO- https://deb.nodesource.com/setup_8.x | sudo -E bash -
-RUN apt update && sudo apt -y install nodejs
+RUN wget -qO- https://deb.nodesource.com/setup_8.x | bash -
+RUN apt update && apt -y install nodejs
 RUN npm install -g @angular/cli
 
 EXPOSE 1337 3000 4200 5000 9000 8003
