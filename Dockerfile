@@ -1,4 +1,4 @@
-FROM quay.io/eclipse/che-nodejs10-community
+FROM quay.io/eclipse/che-nodejs10-community:7.13.2
 RUN sudo npm install -g @angular/cli
 EXPOSE 1337 3000 4200 5000 9000 8003
 RUN sudo npm install --unsafe-perm -g yarn gulp bower grunt grunt-cli yeoman-generator yo generator-angular generator-karma generator-webapp typescript typescript-language-server
