@@ -1,5 +1,7 @@
-FROM debian
+FROM ubuntu
 RUN apt-get update
+RUN apt-get install -y wget
+#RUN apt-get install -y build-essential
 RUN wget -qO- https://deb.nodesource.com/setup_8.x | bash -
 RUN apt update && apt -y install nodejs
 RUN npm install -g @angular/cli
